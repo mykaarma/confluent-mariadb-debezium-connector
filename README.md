@@ -18,9 +18,9 @@ For details on how this connector was created, refer to the later sections of th
 
 The self-hosted Confluent Platform only supports connectors available on [Confluent Hub](https://www.confluent.io/hub/). However, as of April 2025, the [official Debezium MariaDB connector](https://debezium.io/documentation/reference/stable/connectors/mariadb.html) is not available on Confluent Hub. 
 
-While the Confluent Platform allows running external connectors by providing a connector ZIP file, the official Debezium connectors are not compatible with Confluent Connect workers running on Kubernetes. Additionally, Confluent Hub often lags behind the latest open-source connector versions, making it difficult to use the most up-to-date connectors.
+While the Confluent Platform allows running external connectors by providing a connector ZIP file, the official Debezium connectors are not compatible. Only the connectors from Confluent Hub are supported, which often lags behind the latest open-source connector versions. This makes it difficult to use the most up-to-date connectors.
 
-The method described in this repository can also be applied to other official Debezium connectors to make them compatible with the Confluent Platform.
+The method described in this repository can also be applied to other official Debezium connectors, to make them compatible with the Confluent Platform.
 
 ---
 
